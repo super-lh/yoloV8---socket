@@ -4,7 +4,7 @@ YOLOv8 自定义目标检测 - 通用训练脚本
 
 环境：ultralytics 8.4.176 + torch 2.14 (CUDA)
 注意：请在 D:\\super-lhyolov8socket\\yoloV8---socket\\training 目录下运行，这样会加载 base 环境的 8.4.176
-      （若放在 ultralytics-main 源码目录内运行，则会加载旧版 8.0.5，API 不兼容）
+      （不要放进 ultralytics 源码目录内运行，否则会加载旧版，API 不兼容）
 
 基本用法：
     python train.py

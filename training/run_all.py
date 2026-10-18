@@ -56,7 +56,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="一键跑通 检查→预览→训练→推理")
     ap.add_argument("--epochs", type=int, default=100, help="训练轮数 (默认: 100)")
     ap.add_argument("--batch", type=int, default=8, help="批大小 (默认: 8)")
-    ap.add_argument("--name", default="socket_v2", help="本次训练名称 (默认: socket_v2)")
+    ap.add_argument("--name", default="socket_v3", help="本次训练名称 (默认: socket_v3)")
     ap.add_argument("--source", default="../dataset/images/val/socket_03.jpg", help="推理用的图片/文件夹")
     ap.add_argument("--conf", type=float, default=0.25, help="推理置信度阈值 (默认: 0.25)")
     ap.add_argument("--skip-train", action="store_true", help="跳过训练，直接用现有最新权重推理")
