@@ -1,0 +1,28 @@
+{
+    "python.defaultInterpreterPath": "D:\\anaconda\\python.exe",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.extraPaths": [
+        "D:\\anaconda\\Lib\\site-packages"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.terminal.executeInFileDir": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/*.pyo": true
+    },
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/runs_train": true,
+        "**/runs_predict": true
+    },
+    "files.associations": {
+        "*.yaml": "yaml",
+        "*.yml": "yaml"
+    },
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
+}

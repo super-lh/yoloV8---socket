@@ -1,0 +1,162 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "训练插座模型 (train.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\train.py",
+            "args": [
+                "--epochs",
+                "100",
+                "--batch",
+                "8",
+                "--name",
+                "socket_v2"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "推理测试 (predict.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\predict.py",
+            "args": [
+                "--source",
+                "../dataset/images/val/socket_03.jpg",
+                "--conf",
+                "0.25"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "检查数据集 (check_dataset.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\check_dataset.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "redirectOutput": true,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "标注预览 (preview_labels.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\preview_labels.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "划分验证集 (split_dataset.py 预览)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\split_dataset.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "★一键全流程 (run_all.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\run_all.py",
+            "args": [
+                "--epochs",
+                "100",
+                "--name",
+                "socket_v3"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "一键流程-跳过训练 (run_all.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\run_all.py",
+            "args": [
+                "--skip-train"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "启动标注 (start_labeling.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\start_labeling.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "★检测程序-检测单张图 (detect.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\detect.py",
+            "args": [
+                "../dataset/images/val/socket_03.jpg",
+                "--conf",
+                "0.35"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "检测程序-摄像头 (detect.py 0)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\detect.py",
+            "args": [
+                "0"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        },
+        {
+            "name": "调试当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "D:\\anaconda\\python.exe",
+            "justMyCode": false,
+            "exceptionHandling": "skip"
+        }
+    ]
+}
