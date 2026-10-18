@@ -40,7 +40,7 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.isdir(_SCRIPT_DIR):
     os.chdir(_SCRIPT_DIR)
 
-BASE = r"D:\YOLOv8\dataset"
+BASE = r"D:\super-lhyolov8socket\yoloV8---socket\dataset"  # 2026-10-18 修正原路径 D:\YOLOv8\dataset 已不存在
 IMG_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 

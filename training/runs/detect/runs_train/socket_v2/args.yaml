@@ -111,4 +111,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: D:\YOLOv8\training\runs\detect\runs_train\socket_v2
+save_dir: D:\super-lhyolov8socket\yoloV8---socket\training\runs\detect\runs_train\socket_v2

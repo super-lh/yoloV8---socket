@@ -13,7 +13,7 @@
 做的事：
   1. 自动找 runs/ 下最新训练出来的 best.pt（也可用 --weights 指定）
   2. 逐张/逐帧检测，在画面上画框
-  3. 结果保存到 D:\\YOLOv8\\training\\outputs\\
+  3. 结果保存到 本脚本所在目录的 outputs\\（当前为 D:\\super-lhyolov8socket\\yoloV8---socket\\training\\outputs）
   4. 终端里打印每个框的类别、置信度、坐标
   5. 图片/视频处理完自动打开结果（加 --no-open 可关闭）
 

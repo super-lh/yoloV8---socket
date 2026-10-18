@@ -6,7 +6,7 @@
     python preview_labels.py                 # 生成全部预览
     python preview_labels.py --split val     # 只看验证集
 
-输出目录：D:\\YOLOv8\\dataset\\preview\\<split>\\*.jpg
+输出目录：<数据集根目录>\\preview\\<split>\\*.jpg（跟随 BASE，当前为 D:\\super-lhyolov8socket\\yoloV8---socket\\dataset\\preview）
 打开图片看一眼，框应该正好贴在插座边缘上；没有框的图会标 "no box (negative)"。
 """
 import argparse
@@ -26,8 +26,8 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.isdir(_SCRIPT_DIR):
     os.chdir(_SCRIPT_DIR)
 
-BASE = r"D:\YOLOv8\dataset"
-OUT = r"D:\YOLOv8\dataset\preview"
+BASE = r"D:\super-lhyolov8socket\yoloV8---socket\dataset"  # 2026-10-18 修正原路径 D:\YOLOv8\dataset 已不存在
+OUT = os.path.join(os.path.dirname(BASE), "preview")  # 2026-10-18：dataset 内只保留 images/labels，预览输出到工程根目录 preview/
 MAX_SIDE = 900
 
 

@@ -169,7 +169,7 @@ def main():
     if not os.path.exists(args.data):
         print("找不到配置文件: %s" % args.data)
         print("当前工作目录: %s" % os.getcwd())
-        print("请在 D:\\YOLOv8\\training 目录下运行，或用 --data 指定 yaml 路径。")
+        print("请在 D:\\super-lhyolov8socket\\yoloV8---socket\\training 目录下运行，或用 --data 指定 yaml 路径。")
         return 1
 
     with open(args.data, encoding="utf-8") as fh:

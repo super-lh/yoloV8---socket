@@ -2,10 +2,10 @@ task: detect
 mode: train
 model: yolov8n.pt
 data: data.yaml
-epochs: 1
+epochs: 100
 time: null
 patience: 30
-batch: 4
+batch: 8
 imgsz: 640
 save: true
 save_period: -1
@@ -111,4 +111,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: D:\YOLOv8\training\runs\detect\runs_train\custom
+save_dir: D:\super-lhyolov8socket\yoloV8---socket\training\runs\detect\runs_train\custom

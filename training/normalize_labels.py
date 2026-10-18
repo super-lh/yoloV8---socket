@@ -11,7 +11,7 @@
     python normalize_labels.py            # 先预览会怎么改（不写盘）
     python normalize_labels.py --apply    # 真正改写标注文件
 
-原始标注已备份在 D:\\YOLOv8\\dataset\\labels_原始备份
+原始标注已备份在 D:\\WorkBuddy产物\\插座数据增强\\labels_原始备份
 """
 import argparse
 import os
@@ -27,7 +27,7 @@ _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.isdir(_SCRIPT_DIR):
     os.chdir(_SCRIPT_DIR)
 
-BASE = r"D:\YOLOv8\dataset"
+BASE = r"D:\super-lhyolov8socket\yoloV8---socket\dataset"  # 2026-10-18 修正原路径 D:\YOLOv8\dataset 已不存在
 
 
 def parse_line(ln):

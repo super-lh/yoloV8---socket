@@ -11,7 +11,7 @@
     python run_all.py --epochs 200        # 改训练轮数
     python run_all.py --source 图片.jpg    # 改推理输入
 
-说明：所有子脚本都会自动把工作目录切到 D:\\YOLOv8\\training，
+说明：所有子脚本都会自动把工作目录切到 D:\\super-lhyolov8socket\\yoloV8---socket\\training，
       所以你在哪个文件夹打开 VS Code、按 F5 都能跑。
 """
 import argparse

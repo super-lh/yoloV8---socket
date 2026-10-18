@@ -3,7 +3,7 @@
 YOLOv8 自定义目标检测 - 通用训练脚本
 
 环境：ultralytics 8.4.176 + torch 2.14 (CUDA)
-注意：请在 D:\\YOLOv8\\training 目录下运行，这样会加载 base 环境的 8.4.176
+注意：请在 D:\\super-lhyolov8socket\\yoloV8---socket\\training 目录下运行，这样会加载 base 环境的 8.4.176
       （若放在 ultralytics-main 源码目录内运行，则会加载旧版 8.0.5，API 不兼容）
 
 基本用法：
@@ -116,8 +116,8 @@ def main() -> int:
             print()
             print("脚本所在目录下有这个文件：")
             print("    %s" % here_yaml)
-            print("说明当前工作目录不是 training。请在 D:\\YOLOv8\\training 下运行，")
-            print("或者先执行: cd /d D:\\YOLOv8\\training")
+            print("说明当前工作目录不是 training。请在 D:\\super-lhyolov8socket\\yoloV8---socket\\training 下运行，")
+            print("或者先执行: cd /d D:\\super-lhyolov8socket\\yoloV8---socket\\training")
         return 1
 
     if not os.path.exists(args.model):

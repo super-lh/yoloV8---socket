@@ -13,7 +13,7 @@ YOLOv8 推理脚本
     python predict.py --weights runs/detect/runs_train/socket_v1/weights/best.pt --source test.jpg
 
     # 还没训练好？用官方预训练权重跑通用检测（80 类，不含插座）
-    python predict.py --weights ../weights/yolov8n.pt --source ../output/demo/bus.jpg
+    python predict.py --weights ../weights/yolov8n.pt --source 任意图片.jpg
 
 权重默认值：留空时自动在 runs/ 下找 epoch 最新的 best.pt，找不到再退回 yolov8n.pt。
 说明：用 getattr 读结果属性是为了避开 Pylance 对 ultralytics 返回类型的错误推断。
